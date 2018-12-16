@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOMPoem</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button id="button" type="button" name="button">Hair Colors<br>↑ ClickClickClick ↑</button>
+  </body>
+  <script>
+     var words = ["<br>","by Roann Mendriq", "<br>", "Today’s trendy women", "Like highlights in their hair,","Of hues that range from Burgundy","to Honey blonde, they dare.","<br>","Purple streaks are much preferred,", "in swirls of Pink and Red;", "A crown of Blonde is interspersed", "with a single bright Green thread.","<br>","But me, I tend to vacillate,","And dare not be so bold,","I much prefer my Silver locks","to Honey Brown or Gold.","<br>","So its silver highlights that I’m wearing,","And I’ll wear them with much pride,","I’ll age with grace and gently,","My silver hair I won’t hide!"]
+     var i = 0;
+
+     $("document").ready(function(){
+       $("#button").click(function() {
+         $("body").append("<div class='box'>" + words[i] + "</div>");
+         i++;
+       })
+     })
+  </script>
+  </html>
